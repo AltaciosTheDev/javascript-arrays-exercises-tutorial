@@ -2,4 +2,11 @@ let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','L
 
 // Your code here
 
+function filterByName(array, requiredText){
+    let nameWithAM = array.filter(name =>{
+        return (name.toLowerCase().includes(requiredText))
+    })
+    return nameWithAM
+}
+
 console.log(filterByName(names, 'am'));
